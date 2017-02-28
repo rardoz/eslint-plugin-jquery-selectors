@@ -36,16 +36,22 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "jquery-selectors/rule-name": 2
+        "jquery-selectors/id-or-class": 2
     }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
+* id-or-class: jQuery selectors should start with a class or an ID.
 
+```javascript
+//good
+$('#my-id')
+$('.my-class')
 
-
-
-
+//bad
+$('[id="my-id"]')
+$('input[data-thing="true"]')
+$('div')
+```
