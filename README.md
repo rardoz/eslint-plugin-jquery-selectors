@@ -36,7 +36,8 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "jquery-selectors/id-or-class": 2
+        "jquery-selectors/id-or-class": 2,
+        "jquery-selectors/js-prefix": 2
     }
 }
 ```
@@ -54,4 +55,17 @@ $('.my-class')
 $('[id="my-id"]')
 $('input[data-thing="true"]')
 $('div')
+```
+
+* js-prefix: jQuery selectors should start with a class or an ID.
+
+```javascript
+//good
+$('#js-my-id')
+$('.v-js-my-class')
+
+//bad
+$('#my-id')
+$('.my-class')
+$('.js-my-class #my-id')
 ```
