@@ -1,7 +1,11 @@
 {
   "name": "eslint-plugin-jquery-selectors",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "An eslint plugin to catch poor performing jQuery selectors.",
+  "repository": {
+    "url": "https://github.com/rardoz/eslint-plugin-jquery-selectors.git",
+    "type": "git"
+  },
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -10,14 +14,6 @@
   "author": "Robert Greene",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha tests --recursive"
-  },
-  "dependencies": {
-    "requireindex": "~1.1.0"
-  },
-  "devDependencies": {
-    "eslint": "~3.9.1",
-    "mocha": "^3.1.2"
   },
   "engines": {
     "node": ">=0.10.0"
