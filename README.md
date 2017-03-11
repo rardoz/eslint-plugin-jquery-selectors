@@ -57,7 +57,7 @@ $('input[data-thing="true"]')
 $('div')
 ```
 
-* js-prefix: jQuery selectors should start with a class or an ID.
+* js-prefix: DOM manipulated by JS should use selectors with the js- or v-js- prefix.
 
 ```javascript
 //good
